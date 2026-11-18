@@ -1,0 +1,7 @@
+{
+  "name": "ditt0-cli-design-system",
+  "version": "0.4.0",
+  "description": "Ditt0, Dash0's design system for terminal UIs: components for Claude Code mods, a /book of them (the gallery), Dash0 MCP query results drawn as charts, and a Go package with the same colours and components for terminal programs",
+  "types": "./types/index.d.ts",
+  "author": { "name": "Luca Ucciero", "email": "luca.ucciero@dash0.com" }
+}

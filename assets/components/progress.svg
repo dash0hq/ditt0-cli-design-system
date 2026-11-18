@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 80" width="288" height="80" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13">
+<rect width="288" height="80" rx="8" fill="#0d1117"/>
+<text x="16 24 32 40 48 56" y="28" fill="#e6edf3" opacity="0.55">node-a</text>
+<path d="M77.3 24L72 24M74.7 24L80 24" stroke="#48b78c" fill="none" stroke-width="2.6"/>
+<path d="M85.3 24L80 24M82.7 24L88 24" stroke="#48b78c" fill="none" stroke-width="2.6"/>
+<path d="M93.3 24L88 24M90.7 24L96 24" stroke="#48b78c" fill="none" stroke-width="2.6"/>
+<path d="M101.3 24L96 24M98.7 24L104 24" stroke="#48b78c" fill="none" stroke-width="2.6"/>
+<path d="M109.3 24L104 24M106.7 24L112 24" stroke="#48b78c" fill="none" stroke-width="2.6"/>
+<path d="M117.3 24L112 24M114.7 24L120 24" stroke="#48b78c" fill="none" stroke-width="2.6"/>
+<path d="M125.3 24L120 24M122.7 24L128 24" stroke="#48b78c" fill="none" stroke-width="2.6"/>
+<path d="M133.3 24L128 24M130.7 24L136 24" stroke="#48b78c" fill="none" stroke-width="2.6"/>
+<path d="M141.3 24L136 24M138.7 24L144 24" stroke="#e6edf3" fill="none" opacity="0.55" stroke-width="2.6"/>
+<path d="M149.3 24L144 24M146.7 24L152 24" stroke="#e6edf3" fill="none" opacity="0.55" stroke-width="2.6"/>
+<path d="M157.3 24L152 24M154.7 24L160 24" stroke="#e6edf3" fill="none" opacity="0.55" stroke-width="2.6"/>
+<path d="M165.3 24L160 24M162.7 24L168 24" stroke="#e6edf3" fill="none" opacity="0.55" stroke-width="2.6"/>
+<path d="M173.3 24L168 24M170.7 24L176 24" stroke="#e6edf3" fill="none" opacity="0.55" stroke-width="2.6"/>
+<path d="M181.3 24L176 24M178.7 24L184 24" stroke="#e6edf3" fill="none" opacity="0.55" stroke-width="2.6"/>
+<path d="M189.3 24L184 24M186.7 24L192 24" stroke="#e6edf3" fill="none" opacity="0.55" stroke-width="2.6"/>
+<path d="M197.3 24L192 24M194.7 24L200 24" stroke="#e6edf3" fill="none" opacity="0.55" stroke-width="2.6"/>
+<path d="M205.3 24L200 24M202.7 24L208 24" stroke="#e6edf3" fill="none" opacity="0.55" stroke-width="2.6"/>
+<path d="M213.3 24L208 24M210.7 24L216 24" stroke="#e6edf3" fill="none" opacity="0.55" stroke-width="2.6"/>
+<path d="M221.3 24L216 24M218.7 24L224 24" stroke="#e6edf3" fill="none" opacity="0.55" stroke-width="2.6"/>
+<path d="M229.3 24L224 24M226.7 24L232 24" stroke="#e6edf3" fill="none" opacity="0.55" stroke-width="2.6"/>
+<text x="248 256 264" y="28" fill="#e6edf3">41%</text>
+<text x="16 24 32 40 48 56" y="44" fill="#e6edf3" opacity="0.55">node-b</text>
+<path d="M77.3 40L72 40M74.7 40L80 40" stroke="#ffe54f" fill="none" stroke-width="2.6"/>
+<path d="M85.3 40L80 40M82.7 40L88 40" stroke="#ffe54f" fill="none" stroke-width="2.6"/>
+<path d="M93.3 40L88 40M90.7 40L96 40" stroke="#ffe54f" fill="none" stroke-width="2.6"/>
+<path d="M101.3 40L96 40M98.7 40L104 40" stroke="#ffe54f" fill="none" stroke-width="2.6"/>
+<path d="M109.3 40L104 40M106.7 40L112 40" stroke="#ffe54f" fill="none" stroke-width="2.6"/>
+<path d="M117.3 40L112 40M114.7 40L120 40" stroke="#ffe54f" fill="none" stroke-width="2.6"/>
+<path d="M125.3 40L120 40M122.7 40L128 40" stroke="#ffe54f" fill="none" stroke-width="2.6"/>
+<path d="M133.3 40L128 40M130.7 40L136 40" stroke="#ffe54f" fill="none" stroke-width="2.6"/>
+<path d="M141.3 40L136 40M138.7 40L144 40" stroke="#ffe54f" fill="none" stroke-width="2.6"/>
+<path d="M149.3 40L144 40M146.7 40L152 40" stroke="#ffe54f" fill="none" stroke-width="2.6"/>
+<path d="M157.3 40L152 40M154.7 40L160 40" stroke="#ffe54f" fill="none" stroke-width="2.6"/>
+<path d="M165.3 40L160 40M162.7 40L168 40" stroke="#ffe54f" fill="none" stroke-width="2.6"/>
+<path d="M173.3 40L168 40M170.7 40L176 40" stroke="#ffe54f" fill="none" stroke-width="2.6"/>
+<path d="M181.3 40L176 40M178.7 40L184 40" stroke="#ffe54f" fill="none" stroke-width="2.6"/>
+<path d="M189.3 40L184 40M186.7 40L192 40" stroke="#ffe54f" fill="none" stroke-width="2.6"/>
+<path d="M196 40L192 40" stroke="#ffe54f" fill="none" stroke-width="2.6"/>
+<path d="M205.3 40L200 40M202.7 40L208 40" stroke="#e6edf3" fill="none" opacity="0.55" stroke-width="2.6"/>
+<path d="M213.3 40L208 40M210.7 40L216 40" stroke="#e6edf3" fill="none" opacity="0.55" stroke-width="2.6"/>
+<path d="M221.3 40L216 40M218.7 40L224 40" stroke="#e6edf3" fill="none" opacity="0.55" stroke-width="2.6"/>
+<path d="M229.3 40L224 40M226.7 40L232 40" stroke="#e6edf3" fill="none" opacity="0.55" stroke-width="2.6"/>
+<text x="248 256 264" y="44" fill="#e6edf3">78%</text>
+<text x="16 24 32 40 48 56" y="60" fill="#e6edf3" opacity="0.55">node-c</text>
+<path d="M77.3 56L72 56M74.7 56L80 56" stroke="#e33238" fill="none" stroke-width="2.6"/>
+<path d="M85.3 56L80 56M82.7 56L88 56" stroke="#e33238" fill="none" stroke-width="2.6"/>
+<path d="M93.3 56L88 56M90.7 56L96 56" stroke="#e33238" fill="none" stroke-width="2.6"/>
+<path d="M101.3 56L96 56M98.7 56L104 56" stroke="#e33238" fill="none" stroke-width="2.6"/>
+<path d="M109.3 56L104 56M106.7 56L112 56" stroke="#e33238" fill="none" stroke-width="2.6"/>
+<path d="M117.3 56L112 56M114.7 56L120 56" stroke="#e33238" fill="none" stroke-width="2.6"/>
+<path d="M125.3 56L120 56M122.7 56L128 56" stroke="#e33238" fill="none" stroke-width="2.6"/>
+<path d="M133.3 56L128 56M130.7 56L136 56" stroke="#e33238" fill="none" stroke-width="2.6"/>
+<path d="M141.3 56L136 56M138.7 56L144 56" stroke="#e33238" fill="none" stroke-width="2.6"/>
+<path d="M149.3 56L144 56M146.7 56L152 56" stroke="#e33238" fill="none" stroke-width="2.6"/>
+<path d="M157.3 56L152 56M154.7 56L160 56" stroke="#e33238" fill="none" stroke-width="2.6"/>
+<path d="M165.3 56L160 56M162.7 56L168 56" stroke="#e33238" fill="none" stroke-width="2.6"/>
+<path d="M173.3 56L168 56M170.7 56L176 56" stroke="#e33238" fill="none" stroke-width="2.6"/>
+<path d="M181.3 56L176 56M178.7 56L184 56" stroke="#e33238" fill="none" stroke-width="2.6"/>
+<path d="M189.3 56L184 56M186.7 56L192 56" stroke="#e33238" fill="none" stroke-width="2.6"/>
+<path d="M197.3 56L192 56M194.7 56L200 56" stroke="#e33238" fill="none" stroke-width="2.6"/>
+<path d="M205.3 56L200 56M202.7 56L208 56" stroke="#e33238" fill="none" stroke-width="2.6"/>
+<path d="M213.3 56L208 56M210.7 56L216 56" stroke="#e33238" fill="none" stroke-width="2.6"/>
+<path d="M220 56L216 56" stroke="#e33238" fill="none" stroke-width="2.6"/>
+<path d="M229.3 56L224 56M226.7 56L232 56" stroke="#e6edf3" fill="none" opacity="0.55" stroke-width="2.6"/>
+<text x="248 256 264" y="60" fill="#e6edf3">93%</text>
+</svg>

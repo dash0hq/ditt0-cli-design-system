@@ -1,0 +1,4 @@
+{
+  "description": "The hello-ditt0 hooks module",
+  "modules": ["./register.js"]
+}

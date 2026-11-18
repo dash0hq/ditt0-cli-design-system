@@ -1,0 +1,7 @@
+{
+  "name": "hello-ditt0",
+  "version": "0.1.0",
+  "description": "An example mod that draws a live page with Ditt0: a Dash0 chart beside data of its own, through $.ditt0",
+  "author": { "name": "Luca Ucciero" },
+  "dependencies": ["ditt0-cli-design-system"]
+}

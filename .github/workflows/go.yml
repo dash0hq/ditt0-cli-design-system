@@ -1,0 +1,27 @@
+# The Go package and the base it shares with the JS components: generated tokens and constants up to date, goldens
+# up to date, and Go drawing every golden byte for byte. claude plugin test, which needs Claude Code, runs locally.
+name: go
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  base:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: oven-sh/setup-bun@v2
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go/go.mod
+      - run: node scripts/export-tokens.mjs --check
+      - run: node scripts/export-goldens.mjs --check
+      - working-directory: go
+        run: |
+          test -z "$(gofmt -l .)"
+          go vet ./...
+          go test ./...
+          GOOS=windows go vet ./...

@@ -1,0 +1,6 @@
+{
+  "description": "The ditt0-cli-design-system hooks module",
+  "modules": [
+    "./register.jsx"
+  ]
+}

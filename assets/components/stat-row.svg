@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 344 80" width="344" height="80" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13">
+<rect width="344" height="80" rx="8" fill="#0d1117"/>
+<text x="16 24 32 40 48 56 64 72" y="28" fill="#e6edf3" opacity="0.55">Requests</text>
+<text x="112 120 128 136 144 152" y="28" fill="#e6edf3" opacity="0.55">Errors</text>
+<text x="280 288 296" y="28" fill="#e6edf3" opacity="0.55">P95</text>
+<text x="16 24 32 40 48 56" y="44" fill="#e6edf3" font-weight="700">9627/s</text>
+<text x="112 120" y="44" fill="#e6edf3" font-weight="700">0%</text>
+<text x="280 288 296 312 320" y="44" fill="#ffe54f" font-weight="700">312ms</text>
+<text x="112 128 136 144 152 160" y="60" fill="#48b78c">▼26.2%</text>
+<text x="176 184 200 208 224 232 240" y="60" fill="#e6edf3" opacity="0.55">vs1hago</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 96" width="328" height="96" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13">
+<rect width="328" height="96" rx="8" fill="#0d1117"/>
+<text x="16 24 32 40 48 56 72 80 88 96" y="28" fill="#e6edf3" opacity="0.55">Memoryused</text>
+<rect x="17" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="25" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="33" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="41" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="49" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="57" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="65" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="73" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="81" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="89" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="97" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="105" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="113" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="121" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="129" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="137" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="145" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="153" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="161" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="169" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="177" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="185" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="193" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="201" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="209" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="217" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="225" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="233" y="36.5" width="6" height="7" fill="#e33238" shape-rendering="crispEdges"/>
+<rect x="241.5" y="37" width="5" height="6" stroke="#e6edf3" fill="none" opacity="0.55" stroke-width="1"/>
+<rect x="249.5" y="37" width="5" height="6" stroke="#e6edf3" fill="none" opacity="0.55" stroke-width="1"/>
+<text x="264 272 280 296 304" y="44" fill="#e33238" font-weight="700">7.4GB</text>
+<path d="M188 56L188 48" stroke="#ffe54f" fill="none" stroke-width="1.2"/>
+<path d="M236 56L236 48" stroke="#e33238" fill="none" stroke-width="1.2"/>
+<text x="16 32 224 240 248" y="76" fill="#e6edf3" opacity="0.55">0B8GB</text>
+</svg>
