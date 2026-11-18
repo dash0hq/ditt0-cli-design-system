@@ -7,7 +7,7 @@
   </picture>
 </p>
 
-Read it *Dittzero*.
+Read it *Ditt-zero* or *Ditt-oh*.
 
 Components for terminal UIs: charts, stats, tables, forms and panes, in Dash0's colours. They work on their own with any data, and they can connect to Dash0.
 
