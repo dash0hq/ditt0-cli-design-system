@@ -554,7 +554,9 @@ type TimeseriesProps struct {
 	Unit string
 	// The chart's width in cells, as the JS chart measures its Box; 0 draws a column a sample, 60 at most
 	Width int
-	// The plot's height in rows on one axis; 0 is Ditt0's 12. Small multiples are 5 rows each
+	// The plot's height in rows; 0 is Ditt0's 12 on one axis and 5 a panel for small multiples. For small multiples
+	// it is every panel's rows together, split evenly between them, the first panels taking what is left over, and
+	// never under 3 a panel. Each panel's head line and the blank line above it come on top
 	Rows int
 	// Keep every series on one axis even where one would flatten there, as the JS multiples={false} does: such as
 	// CPU usage against its request and limit, where reading one against the other is the point
@@ -565,6 +567,10 @@ type TimeseriesProps struct {
 	// The theme series with no colour take theirs from; the zero value draws with Dark
 	Theme Theme
 }
+
+// minMultipleRows is the fewest rows a small multiple gets when Rows splits a height between panels: three keeps its
+// top, middle and bottom labels on rows of their own
+const minMultipleRows = 3
 
 // Timeseries is Ditt0's Timeseries: box-drawing or braille lines over a y axis of round numbers, a time axis and a legend; or
 // small multiples, a panel each, for four series or more, or where one would draw flat on the others' axis.
@@ -595,11 +601,21 @@ func Timeseries(p TimeseriesProps) Block {
 		raw[i] = sceneSeries{s, bucket(s.Values, 1)}
 	}
 	shared := p.OneAxis || (len(raw) <= maxShared && !flattens(raw, timeseriesRows))
-	rows := multipleRows
-	if shared {
-		rows = timeseriesRows
-		if p.Rows > 0 {
-			rows = p.Rows
+	// rowsOf(i) is panel i's plot height
+	rowsOf := func(int) int { return multipleRows }
+	switch {
+	case shared && p.Rows > 0:
+		rowsOf = func(int) int { return p.Rows }
+	case shared:
+		rowsOf = func(int) int { return timeseriesRows }
+	case p.Rows > 0:
+		n := len(raw)
+		rowsOf = func(i int) int {
+			share := p.Rows / n
+			if i < p.Rows%n {
+				share++
+			}
+			return max(minMultipleRows, share)
 		}
 	}
 	panelsOf := func(all []sceneSeries) [][]sceneSeries {
@@ -636,7 +652,7 @@ func Timeseries(p TimeseriesProps) Block {
 			scales[i] = scaleFor(p.Unit, largest(r))
 		}
 		units[i] = strings.TrimSpace(scales[i].suffix)
-		labels[i] = yLabels(rows, ranges[i], scales[i])
+		labels[i] = yLabels(rowsOf(i), ranges[i], scales[i])
 		for _, l := range labels[i] {
 			labelWidth = max(labelWidth, utf8.RuneCountInString(l))
 		}
@@ -677,6 +693,7 @@ func Timeseries(p TimeseriesProps) Block {
 			}
 			out = append(out, Line{{strings.Repeat(" ", labelWidth+2), Style{}}, {"━ ", Style{Fg: panel[0].Color}}, {head, DimStyle}})
 		}
+		rows := rowsOf(i)
 		var cells [][]cell
 		if p.LineType == LineTypeBraille {
 			cells = drawBraille(panel, rows, ranges[i], len(points))

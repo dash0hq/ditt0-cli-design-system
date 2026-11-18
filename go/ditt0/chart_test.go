@@ -1,6 +1,7 @@
 package ditt0
 
 import (
+	"fmt"
 	"strings"
 	"testing"
 	"time"
@@ -193,5 +194,35 @@ func TestANSIJoinsNeighboursOfOneStyle(t *testing.T) {
 	}
 	if len(l) != 7 || l[0].Text != "a" {
 		t.Fatalf("ANSI changed the line it was called on: %v", l)
+	}
+}
+
+// Rows on small multiples is the panels' height together, split evenly, the remainder to the first panels
+func TestTimeseriesRowsSplitsBetweenMultiples(t *testing.T) {
+	ss := []Series{
+		{"requests", []*float64{f(1200), f(1300), f(1250), f(1210)}, ""},
+		{"errors", []*float64{f(1), f(3), f(2), f(1)}, ""},
+		{"rejected", []*float64{f(0.01), f(0.03), f(0.02), f(0.05)}, ""},
+		{"retried", []*float64{f(40), f(41), f(40), f(42)}, ""},
+	}
+	plotRows := func(rows int) []int {
+		var heights []int
+		for _, s := range strings.Split(Timeseries(TimeseriesProps{Series: ss, Times: minutes(4), Width: 40, Rows: rows}).String(), "\n") {
+			switch {
+			case strings.Contains(s, "━ "):
+				heights = append(heights, 0)
+			case strings.Contains(s, "┤") || strings.Contains(s, "│"):
+				heights[len(heights)-1]++
+			}
+		}
+		return heights
+	}
+	for _, c := range []struct {
+		rows int
+		want []int
+	}{{0, []int{5, 5, 5, 5}}, {20, []int{5, 5, 5, 5}}, {22, []int{6, 6, 5, 5}}, {4, []int{3, 3, 3, 3}}} {
+		if got := plotRows(c.rows); fmt.Sprint(got) != fmt.Sprint(c.want) {
+			t.Errorf("Rows %d: panels %v rows high, want %v", c.rows, got, c.want)
+		}
 	}
 }
