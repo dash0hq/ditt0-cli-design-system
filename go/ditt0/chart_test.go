@@ -226,3 +226,15 @@ func TestTimeseriesRowsSplitsBetweenMultiples(t *testing.T) {
 		}
 	}
 }
+
+func TestTimeseriesLeavesOutAnEmptyLegend(t *testing.T) {
+	vs := []*float64{f(1), f(3), f(2), f(4)}
+	unnamed := Timeseries(TimeseriesProps{Series: []Series{{"", vs, Dark.Error.Inline}}, Times: minutes(4), Width: 50, Rows: 5})
+	if last := (Block{unnamed[len(unnamed)-1]}).String(); strings.Contains(last, "━") {
+		t.Errorf("a series with no name has no legend, got last line %q", last)
+	}
+	named := Timeseries(TimeseriesProps{Series: []Series{{"errors", vs, Dark.Error.Inline}}, Times: minutes(4), Width: 50, Rows: 5}).String()
+	if !strings.Contains(named, "━ errors") {
+		t.Errorf("a named series keeps its legend:\n%s", named)
+	}
+}

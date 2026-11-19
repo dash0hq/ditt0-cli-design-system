@@ -486,6 +486,16 @@ func shorten(name string, most int) string {
 	return string(r[:head]) + "…" + string(r[len(r)-(most-1-head):])
 }
 
+// named reports whether any series has a name for the legend to show
+func named(ss []sceneSeries) bool {
+	for _, s := range ss {
+		if s.Name != "" {
+			return true
+		}
+	}
+	return false
+}
+
 // legend is Ditt0's Legend: a swatch in each series' colour, then its name, dim, wrapping at width (0: never)
 func legend(ss []sceneSeries, swatch string, width int) Block {
 	var out Block
@@ -735,8 +745,8 @@ func Timeseries(p TimeseriesProps) Block {
 	for _, row := range timeRows(points, times, labelWidth, timeLabel) {
 		out = append(out, Text(row, DimStyle))
 	}
-	// Under a shared panel, which colour is which series, past the y axis
-	if shared {
+	// Under a shared panel, which colour is which series, past the y axis; with no names there is nothing to say
+	if shared && named(bucketed) {
 		wrap := 0
 		if p.Width > 0 {
 			wrap = p.Width - labelWidth - 2

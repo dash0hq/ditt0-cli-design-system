@@ -18,7 +18,7 @@ import { Timeseries } from '../components/molecules/charts/timeseries/timeseries
 
 ## Variants
 
-**Shared axis.** Up to three series draw on one axis, each in its own colour from the [Color Manager](../../../foundations/color-manager/color-manager.md). A [Legend](../../../atoms/legend/legend.md) under the plot says which colour is which; `legend={false}` leaves it out. The y axis runs between round numbers, as Dash0's does (d3's `nice()`): an axis for values up to 510 GB reads 0, 300, 600.
+**Shared axis.** Up to three series draw on one axis, each in its own colour from the [Color Manager](../../../foundations/color-manager/color-manager.md). A [Legend](../../../atoms/legend/legend.md) under the plot says which colour is which; `legend={false}` leaves it out, and so does a chart whose series have no names. The y axis runs between round numbers, as Dash0's does (d3's `nice()`): an axis for values up to 510 GB reads 0, 300, 600.
 
 <Canvas story="components-charts-timeseries--default" />
 

@@ -547,8 +547,8 @@ export const toScene = (series, { unit = '', palette = 'auto', overlap = 'first'
 }
 
 // Under a shared panel, which colour is which series (Legend); small multiples name theirs over each panel
-// It starts under the plot, past the y axis
-const legendOf = ({ shared, bucketed, bars, labelWidth }) => shared
+// It starts under the plot, past the y axis; with no names there is nothing to say
+const legendOf = ({ shared, bucketed, bars, labelWidth }) => shared && bucketed.some(s => s.name)
     ? [el().Box({ paddingLeft: labelWidth + 2, children: [Legend({ items: bucketed.map(s => ({ name: s.name, color: s.color })), swatch: bars ? '█' : '━' })] })]
     : []
 
